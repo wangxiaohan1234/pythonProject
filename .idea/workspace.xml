@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d85c3174-04f4-4219-ac2e-5d16da9b923f" name="Changes" comment="New">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excelOpt/bars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excelOpt/bokehTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/excelOpt/matplotlib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d85c3174-04f4-4219-ac2e-5d16da9b923f" name="Changes" comment="New" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,7 +203,7 @@
       <workItem from="1629960573224" duration="2726000" />
       <workItem from="1629963996614" duration="1790000" />
       <workItem from="1629967902041" duration="551000" />
-      <workItem from="1630047627085" duration="6399000" />
+      <workItem from="1630047627085" duration="6816000" />
     </task>
     <task id="LOCAL-00001" summary="New">
       <created>1629962645936</created>
@@ -226,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630048240229</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New">
+      <created>1630054754482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630054754482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +279,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$creatExcel.coverage" NAME="creatExcel 覆盖结果" MODIFIED="1629889041632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/excelOpt" />
     <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main 覆盖结果" MODIFIED="1629790026575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$bokehTest.coverage" NAME="bokehTest 覆盖结果" MODIFIED="1630054148026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/excelOpt" />
-    <SUITE FILE_PATH="coverage/pythonProject$matplotlib.coverage" NAME="matplotlib 覆盖结果" MODIFIED="1630054555245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/excelOpt" />
+    <SUITE FILE_PATH="coverage/pythonProject$matplotlib.coverage" NAME="matplotlib 覆盖结果" MODIFIED="1630054639933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/excelOpt" />
     <SUITE FILE_PATH="coverage/pythonProject$test.coverage" NAME="test 覆盖结果" MODIFIED="1629873402866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$1.coverage" NAME="1 覆盖结果" MODIFIED="1629974200768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/excelOpt" />
   </component>

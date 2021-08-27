@@ -1,25 +1,17 @@
-from bokeh.plotting import *
+# 导入第三方模块
+import matplotlib.pyplot as plt
 
-from numpy import pi
-
-# define starts/ends for wedges from percentages of a circle
-
-percents = [0, 0.3, 0.4, 0.6, 0.9, 1]
-
-starts = [p*2*pi for p in percents[:-1]]
-
-ends = [p*2*pi for p in percents[1:]]
-
-# a color for each pie piece
-
-colors = ["red", "green", "blue", "orange", "yellow"]
-
-p = figure(x_range=(-1,1), y_range=(-1,1))
-
-p.wedge(x=0, y=0, radius=0.7, start_angle=starts, end_angle=ends, color=colors)
-
-# display/save everythin
-
-output_file("pie.html")
-
-show(p)
+plt.rcParams['font.sans-serif'] = ['SimHei']
+# 构造数据
+edu = [0.2515, 0.3724, 0.3336, 0.0368, 0.0057]
+labels = ['中专', '大专', '本科', '硕士', '其他']
+explode = [0, 0.1, 0, 0, 0]
+# 绘制饼图
+plt.pie(x=edu,  # 绘图数据
+        labels=labels,  # 添加教育水平标签
+        autopct='%.1f%%',  # 设置百分比的格式，这里保留一位小数
+        explode=explode
+        )
+# plt.axes(aspect='equal')
+# 显示图形
+plt.show()
