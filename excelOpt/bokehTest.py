@@ -7,6 +7,7 @@ from bokeh.io import output_file
 output_file("bars.html")
 
 from bokeh.plotting import figure, show
+from bokeh.transform import dodge
 from bokeh.models import ColumnDataSource
 # 导入图表绘制、图标展示模块
 # 导入ColumnDataSource模块
@@ -28,6 +29,7 @@ ws = wb["Sheet1"]
 # namedict = {}
 # valuedict = {}
 fruits = []
+names = []
 counts = []
 for index in range(len(list(ws.rows))):
     if index == 0:
@@ -38,23 +40,37 @@ for index in range(len(list(ws.rows))):
             cell = row[index2]
             if index2 == 0:
                 fruits.append(cell.value)
+            elif index2 == 1:
+                names.append(cell.value)
             elif index2 == 2:
                 counts.append(cell.value)
 
 # fruits = ['Apples', 'Pears', 'Nectarines', 'Plums', 'Grapes', 'Strawberries']
 # counts = [5, 3, 4, 2, 4, 6]
-source = ColumnDataSource(data=dict(fruits=fruits, counts=counts))
+source = ColumnDataSource(data=dict(fruits=fruits, counts=counts, names=names))
 colors = ["salmon", "olive", "darkred", "goldenrod", "skyblue", "orange"]
 # 创建一个包含标签的data，对象类型为ColumnDataSource
 
 # x_range一开始就要设置成一个字符串的列表；要一一对应
 p = figure(x_range=fruits, y_range=(0, 30), plot_height=350, title="Fruit Counts",tools="")
 # 加载数据另一个方式
-p.vbar(x='fruits', top='counts', source=source,
-       width=0.7,  # 宽度
+# 多柱
+p.vbar(x=dodge('fruits', -0.25, range=p.x_range), top='counts', source=source,
+       width=0.2,  # 宽度
        alpha=0.8,  # 透明度
        color=factor_cmap('fruits', palette=Spectral7, factors=fruits),  # 设置颜色
        legend="fruits")
+p.vbar(x=dodge('fruits', 0, range=p.x_range), top='names', source=source,
+       width=0.2,  # 宽度
+       alpha=0.8,  # 透明度
+       color=factor_cmap('fruits', palette=Spectral7, factors=fruits),  # 设置颜色
+       legend="fruits")
+# 单柱
+# p.vbar(x='fruits', top='counts', source=source,
+#        width=0.7,  # 宽度
+#        alpha=0.8,  # 透明度
+#        color=factor_cmap('fruits', palette=Spectral7, factors=fruits),  # 设置颜色
+#        legend="fruits")
 # 绘制柱状图，横轴直接显示标签
 # factor_cmap(field_name, palette, factors, start=0, end=None, nan_color='gray')：颜色转换模块，生成一个颜色转换对象
 # field_name：分类名称
